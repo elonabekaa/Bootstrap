@@ -1,0 +1,250 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.carousel {
+  width: 100vw;
+  height: 100vh;
+}
+
+.carousel-inner {
+  height: 100%;
+}
+
+.carousel-item {
+  height: 100vh;
+}
+
+.d-flex {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.left-slide {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+}
+
+.left-slide h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+  margin-top: -30px;
+}
+
+.right-slide {
+  width: 65%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+#nature-section {
+  width: 100%;
+  padding-top: 20px;
+}
+.fixed-size {
+  width: 100%;
+  height: 200px; /* Adjust the height as needed */
+  object-fit: cover;
+}
+
+/* Login page */
+.register-photo {
+  background: #f1f7fc;
+  padding: 80px 0;
+}
+
+.register-photo .image-holder {
+  display: table-cell;
+  width: auto;
+  background: url(images/group-of-friends-having-coffee-together-at-a-coffee-shop-PW2ADH.jpg);
+  background-size: cover;
+}
+
+.register-photo .form-container {
+  display: table;
+  max-width: 900px;
+  width: 90%;
+  margin: 0 auto;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.register-photo form {
+  display: table-cell;
+  width: 400px;
+  background-color: #ffffff;
+  padding: 40px 60px;
+  color: #505e6c;
+}
+
+@media (max-width: 991px) {
+  .register-photo form {
+    padding: 40px;
+  }
+}
+
+.register-photo form h2 {
+  font-size: 24px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+.register-photo form .form-control {
+  background: #f7f9fc;
+  border: none;
+  border-bottom: 1px solid #dfe7f1;
+  border-radius: 0;
+  box-shadow: none;
+  outline: none;
+  color: inherit;
+  text-indent: 6px;
+  height: 40px;
+}
+
+.register-photo form .form-check {
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.register-photo form .btn-primary {
+  background: #f4476b;
+  border: none;
+  border-radius: 4px;
+  padding: 11px;
+  box-shadow: none;
+  margin-top: 35px;
+  text-shadow: none;
+  outline: none !important;
+}
+
+.register-photo form .btn-primary:hover,
+.register-photo form .btn-primary:active {
+  background: #eb3b60;
+}
+
+.register-photo form .btn-primary:active {
+  transform: translateY(1px);
+}
+
+.register-photo form .already {
+  display: block;
+  text-align: center;
+  font-size: 12px;
+  color: #6f7a85;
+  opacity: 0.9;
+  text-decoration: none;
+}
+
+/* Accordion  */
+a:hover,
+a:focus {
+  text-decoration: none;
+  outline: none;
+}
+#accordion {
+  padding-left: 80px;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+#accordion:before {
+  content: "";
+  width: 5px;
+  height: 100%;
+  background: #004e89;
+  position: absolute;
+  top: 0;
+  left: 22px;
+  z-index: -1;
+}
+#accordion .card {
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  margin-bottom: 15px;
+}
+#accordion .card-header {
+  padding: 0;
+  border: none;
+  border-radius: 0;
+}
+#accordion .card-header a {
+  display: block;
+  padding: 15px 30px 15px 0;
+  background: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  color: #004e89;
+  position: relative;
+  transition: all 0.5s ease 0s;
+}
+#accordion .card-header a:hover,
+#accordion .card-header a:focus {
+  background: #e6f0f3;
+  color: #002b5c;
+}
+#accordion .card-header a:before {
+  content: "\f068";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  width: 50px;
+  height: 50px;
+  line-height: 40px;
+  border-radius: 50%;
+  background: #cad5c2;
+  text-align: center;
+  font-size: 17px;
+  color: #004e89;
+  border: 6px solid #004e89;
+  position: absolute;
+  top: 0;
+  left: -80px;
+}
+#accordion .card-header a.collapsed:before {
+  content: "\f067";
+  background: #fff;
+}
+#accordion .card-body {
+  padding: 10px 15px;
+  background: #eee;
+  border: none;
+  border-radius: 2px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5) inset,
+    0 1px 2px rgba(255, 255, 255, 0.9);
+  font-size: 14px;
+  color: #487677;
+  line-height: 25px;
+  animation: fadeIn 0.5s ease-in-out;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* Footer */
+#footer {
+  background-color: #0c3542;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#footer p {
+  color: #fff;
+  margin: 0;
+}
